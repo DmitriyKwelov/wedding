@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Prata&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1300px;
+}
+#section1{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gsaergser3.jpg) center no-repeat;
+}
+#section2{
+    background: #F9F0EC;
+}
+#section3{
+    background: #F9F0EC;
+}
+.content-section{
+    width: 100%;
+    height: 100%;
+}
+#content-section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#header-social-media{
+    display: none;
+}
+.logo{
+    font-family: 'Didact Gothic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: #F9F0EC;
+}
+.phone{
+    font-family: 'Didact Gothic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #F9F0EC;
+    text-decoration: none;
+    margin-right: 80px;
+}
+.language{
+    font-family: 'Didact Gothic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #F9F0EC;
+    text-decoration: none;
+}
+.right-header{
+    display: flex;
+}
+.first-section-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    height: 100%;
+}
+.text-dream{
+    display: flex;
+    align-items: center;
+}
+.text-dream p{
+    font-family: 'Didact Gothic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: #D1A573;
+    margin: 0 30px;
+}
+.text-dream span{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 1px;
+    width: 100px;
+    background: #D1A573;
+}
+h1{
+    font-family: 'Prata', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 95px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #F9F0EC;
+}
+.main-btn{
+    width: 216px;
+    height: 44px;
+    background: rgba(21, 21, 21, 0.5);
+    border: 1px solid #D1A573;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #D1A573;
+    cursor: pointer;
+}
+#social-media-right{
+    position: absolute;
+    top: 0;
+    right: 40px;
+    height: 100%;
+}
+#social-media-content-right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social-media-content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tg-link{
+    margin: 0 25px;
+}
+#tg-link-right{
+    margin: 25px 0;
+}
+.scroll{
+    position: absolute;
+    bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#pp-nav{
+    display: none;
+}
+.photo-with-btn-history{
+    width: 750px;
+    height: 750px;
+    position: relative;
+}
+.history-block{
+    position: relative;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.history-block h2{
+    position: absolute;
+    top: -80px;
+    z-index: 5;
+    position: absolute;
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 120px;
+    line-height: 120%;
+    color: #181D24;
+    margin: 0 auto;
+}
+.photo-main-d{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.photo-main-t{
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.photo-main-m{
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.text-near-history{
+    font-family: Didact Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    color: #181D24;
+}
+.text-right-history{
+    margin: 0 0 146px 46px;  
+}
+.text-left-history{
+    margin: 146px 46px 0 0;  
+}
+.btn-history{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+.look-btn{
+    text-decoration: none;
+    z-index: 11;
+    width: 197px;
+    height: 65px;
+    background: #181D24;
+    font-family: Didact Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    color: #D1A573;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+}
+@media(max-width: 1254px){
+    .text-right-history{
+        margin: 0 0 146px 12px;  
+    }
+    .text-left-history{
+        margin: 146px 12px 0 0;  
+    }
+}
+@media(max-width: 1200px){
+    .text-dream p{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+    .text-dream span{
+        width: 75px;
+    }
+    h1{
+        font-size: 47px;
+    }
+    .text-right-history{
+        margin: 0 0 146px 12px;  
+    }
+    .text-left-history{
+        margin: 146px 12px 0 0;  
+    }
+    .photo-main-d{
+        display: none;
+    }
+    .photo-main-t{
+        display: block;
+    }
+    .photo-with-btn-history{
+        width: 450px;
+        height: 570px;
+        position: relative;
+    }
+    .history-block{
+        position: relative;
+        width: 100%;
+        height: 570px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .history-block h2{
+        top: -40px;
+        font-size: 70px;
+    }
+    .text-near-history{
+        font-family: Didact Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 120%;
+        color: #181D24;
+    }
+}
+@media(max-width: 768px){
+    #header-social-media{
+        display: block;
+    }
+    #social-media-right{
+        display: none;
+    }
+    .header-content{
+        padding: 0 40px;
+    }
+    .right-header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    .phone{
+        margin-right: 0;
+    }
+    .social-media-content a{
+        display: flex;
+        align-items: center;
+    }
+}
+@media(max-width: 700px){
+    .text-dream p{
+        font-size: 10px;
+    }
+    .text-dream span{
+        width: 20px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .history-block h2{
+        top: -30px;
+        font-size: 44px;
+    }
+    .photo-main-t{
+        display: none;
+    }
+    .photo-main-m{
+        display: block;
+    }
+    .text-near-history{
+        display: none;
+    }
+    .photo-with-btn-history{
+        width: 320px;
+        height: 500px;
+        position: relative;
+    }
+    .history-block{
+        position: relative;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 400px){
+    #header-social-media{
+        display: none;
+    }
+    .text-dream p{
+        font-size: 10px;
+    }
+    .text-dream span{
+        width: 20px;
+    }
+    h1{
+        font-size: 24px;
+    }
+}
+@media(max-width: 366px){
+    .history-block h2{
+        top: -30px;
+        font-size: 40px;
+    }
+}
+@media(max-width: 348px){
+    #header-social-media{
+        display: none;
+    }
+    .text-dream p{
+        font-size: 10px;
+        margin: 0 5px;
+    }
+    .text-dream span{
+        width: 10px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .history-block h2{
+        top: -30px;
+        font-size: 38px;
+    }
+}
