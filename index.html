@@ -116,6 +116,129 @@
         </div>
         <div class="section pp-scrollable" id="section4">
             <div id="content-section4"  class="content-section">
+                <div class="container-preparation">
+                    <h2>ПОДГОТОВКА</h2>
+                    <ul id="preparation-nav">
+                        <li>Церемонии</li>
+                        <li>Выездной церемонии</li>
+                        <li>Свадьбы под ключ</li>
+                    </ul>
+                    <div class="preparation-content">
+                        <div id="preparation-info-content-d" class="preparation-info-content">
+                            <div class="left-preparation-info">
+                                <div class="preparation-info-block">
+                                    <span class="title-preparation-block">Выбираем</span>
+                                    <div class="img-with-number">
+                                        <span>1</span>
+                                        <img src="img/preparation1.jpg" alt="">
+                                    </div>
+                                    <p class="preparation-block-description">Связываемся с вами и выбираем услугу</p>
+                                </div>
+                                <div class="preparation-info-block">
+                                    <span class="title-preparation-block">Проводим</span>
+                                    <div class="img-with-number">
+                                        <span>3</span>
+                                        <img src="img/preparation3.jpg" alt="">
+                                    </div>
+                                    <p class="preparation-block-description">Реализовываем ваши пожелания</p>
+                                </div>
+                            </div>
+                            <div class="center-preparation-info">
+                                <span class="start-end-line"></span>
+                                <span class="count-day">1<br>День</span>
+                                <span class="center-line"></span>
+                                <span class="count-day">2<br>День</span>
+                                <span class="center-line"></span>
+                                <span class="count-day">3<br>День</span>
+                                <span class="center-line"></span>
+                                <span class="count-day">4<br>День</span>
+                                <span class="start-end-line"></span>
+                            </div>
+                            <div class="right-preparation-info">
+                                <div class="preparation-info-block">
+                                    <span class="title-preparation-block">Готовим</span>
+                                    <div class="img-with-number">
+                                        <span>2</span>
+                                        <img src="img/preparation2.jpg" alt="">
+                                    </div>
+                                    <p class="preparation-block-description">Начинаем подготовку к вашей свадьбе</p>
+                                </div>
+                                <div class="preparation-info-block">
+                                    <span class="title-preparation-block">Проводим</span>
+                                    <div class="img-with-number">
+                                        <span>4</span>
+                                        <img src="img/preparation3.jpg" alt="">
+                                    </div>
+                                    <p class="preparation-block-description">Реализовываем ваши пожелания</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="preparation-info-content-m" class="preparation-info-content">
+                            <div class="center-preparation-info">
+                                <span class="start-end-line"></span>
+                                <span class="count-day">1<br>День</span>
+                                <span class="center-line"></span>
+                                <span class="count-day">2<br>День</span>
+                                <span class="center-line"></span>
+                                <span class="count-day">3<br>День</span>
+                                <span class="center-line"></span>
+                                <span class="count-day">4<br>День</span>
+                                <span class="start-end-line"></span>
+                            </div>
+                            <div class="left-preparation-info">
+                                <div class="preparation-info-block">
+                                    <span class="title-preparation-block">Выбираем</span>
+                                    <div class="img-with-number">
+                                        <span>1</span>
+                                        <img src="img/preparation1m.jpg" alt="">
+                                    </div>
+                                    <p class="preparation-block-description">Связываемся с вами и выбираем услугу</p>
+                                </div>
+                                <div class="preparation-info-block">
+                                    <span class="title-preparation-block">Готовим</span>
+                                    <div class="img-with-number">
+                                        <span>2</span>
+                                        <img src="img/preparation2m.jpg" alt="">
+                                    </div>
+                                    <p class="preparation-block-description">Начинаем подготовку к вашей свадьбе</p>
+                                </div>
+                                <div class="preparation-info-block">
+                                    <span class="title-preparation-block">Проводим</span>
+                                    <div class="img-with-number">
+                                        <span>3</span>
+                                        <img src="img/preparation3m.jpg" alt="">
+                                    </div>
+                                    <p class="preparation-block-description">Реализовываем ваши пожелания</p>
+                                </div>
+                                <div class="preparation-info-block">
+                                    <span class="title-preparation-block">Проводим</span>
+                                    <div class="img-with-number">
+                                        <span>4</span>
+                                        <img src="img/preparation3m.jpg" alt="">
+                                    </div>
+                                    <p class="preparation-block-description">Реализовываем ваши пожелания</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preparation-btn-order">
+                            <p>insta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section pp-scrollable" id="section5">
+            <h2>НАШИ МОЛОДОЖЁНЫ</h2>
+            <div class="slider">
+                <div class="item-silder">
+                    1
+                </div>
+                <div class="item-silder">
+                    2
+                </div>
+                <div class="item-silder">
+                    3
+                </div>
 
             </div>
         </div>
@@ -124,9 +247,17 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#pagepiling').pagepiling({
-                anchors: ['page1', 'page2', 'page3', 'page4'],
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
             });
         });
+        $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+});
     </script>
 </body>
 
