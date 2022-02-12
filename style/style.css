@@ -443,6 +443,12 @@ h1{
     text-align: center;
     margin: 25px 0;
 }
+.preparation-option{
+    display: none;
+}
+.active.preparation-option{
+    display: block;
+}
 .start-end-line{
     display: block;
     content: '';
