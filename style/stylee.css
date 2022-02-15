@@ -63,6 +63,12 @@ html,body{
     top: 10px;
     height: 99%;
 }
+#line-for-section-left-section5{
+    z-index: 2;
+}
+#line-for-section-right-section5{
+    z-index: 2;
+}
 /* #line-for-section-left-section3{
     height: 1000%;
 }
@@ -157,6 +163,9 @@ html,body{
 }
 #header-social-media{
     display: none;
+}
+.footer-tg{
+    margin: 0 55px;
 }
 .logo{
     font-family: 'Didact Gothic', sans-serif;
@@ -841,6 +850,45 @@ h1{
     font-size: 25px;
     line-height: 120%;
     color: #F9F0EC;
+    transition: 0.7s;
+}
+.nav-list.active{
+    color: #D1A573;
+}
+.nav-list:hover{
+    color: #181D24;
+}
+.nav-list::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 99%;
+    height: 1px;
+    background: #D1A573;
+    transition: 0.7s;
+    z-index: -1;
+}
+.nav-list.active::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 1px;
+    background: #D1A573;
+    transition: 0.7s;
+    z-index: -1;
+}
+.nav-list:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    background: #D1A573;
+    transition: 0.7s;
 }
 .slick-list{
     overflow: hidden;
@@ -1035,8 +1083,7 @@ h1{
     font-size: 18px;
     line-height: 120%;
     color: #F9F0EC;
-    opacity: 0;
-    display: none;
+    padding: 15px;
 }
 .line-faq{
     position: absolute;
@@ -1046,12 +1093,18 @@ h1{
     height: 2px;
     background: #181D24;
     width: 100%;
+    height: 174px;
+    overflow-y: scroll;
 }
-.line-faq:hover > .info-faq{
+.line-faq::-webkit-scrollbar{
+    width: 0px;
+    background: rgba(255, 255, 255, 0.0);   
+}
+/* .line-faq:hover > .info-faq{
     opacity: 1;
     padding: 15px;
     display: block;
-}
+} */
 .line-faq{
     position: absolute;
     display: block;
@@ -1118,7 +1171,8 @@ h1{
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: -1;
+    z-index: 1;
+    padding: 50px 0 60px 0;
 }
 .footer-number{
     font-family: Prata;
@@ -1128,6 +1182,22 @@ h1{
     line-height: 95px;
     letter-spacing: 0.1em;
     color: #F9F0EC;
+    margin: 20px 0 30px 0;
+}
+.design-by{
+    position: absolute;
+    margin: 0;
+    bottom: 34px;
+    right: 34px;
+    font-family: Didact Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: right;
+    color: #F9F0EC;
+    opacity: 0.5;
+    text-decoration: none;
 }
 @media(max-width: 1406px){
     .service{
@@ -1382,6 +1452,27 @@ h1{
     .item-silder{
         overflow-y: scroll;
     }
+    .text-portfolio-descriotion{
+        font-family: Didact Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        color: #F9F0EC;
+        padding: 0 15px;
+        opacity: 0;
+        transition: 0.7s;
+    }
+    .text-portfolio.active-m .text-portfolio-descriotion{
+        font-family: Didact Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        color: #F9F0EC;
+        padding: 0 15px;
+        opacity: 1;
+    }
     .text-portfolio {
         overflow-y: scroll;
         position: absolute;
@@ -1390,16 +1481,16 @@ h1{
         padding-left: 67px;
         z-index: 12;
         padding: 0;
+        opacity: 0;
         transition: 0.7s;
     }
     .text-portfolio.active-m {
         display: block;
-        opacity: 1;
     }
     .my-swiper-slide.active-m .item-silder p{
         opacity: 0;
     }
-    .text-portfolio p {
+    /* .text-portfolio p {
         font-family: Didact Gothic;
         font-style: normal;
         font-weight: normal;
@@ -1409,17 +1500,7 @@ h1{
         padding: 0 15px;
         opacity: 0;
         transition: 0.7s;
-    }
-    .text-portfolio.active-m p {
-        font-family: Didact Gothic;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 120%;
-        color: #F9F0EC;
-        padding: 0 15px;
-        opacity: 1;
-    }
+    } */
     .link-portfolio a {
         font-family: Didact Gothic;
         font-style: normal;
@@ -1557,7 +1638,11 @@ h1{
         font-size: 38px;
     }
 }
-@media(max-width: 400px){
+@media(max-width: 425px){
+    #section1{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gsaergser3.jpg) center 30% no-repeat;
+        background-size: 300%;
+    }
     #header-social-media{
         display: none;
     }
@@ -1579,6 +1664,16 @@ h1{
     }
     .service{
         margin: 10px 0;
+    }
+    .nav-list{
+        font-size: 16px;
+    }
+    .swiper-slide-nav{
+        margin: 0;
+        /* width: 500px; */
+        height: 20px;
+        /* width: fit-content; */
+        /* width: max-content; */
     }
 }
 @media(max-width: 366px){

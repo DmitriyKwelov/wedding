@@ -74,25 +74,51 @@ if (window.screen.width > 768) {
     portfolio.forEach(item => {
         item.addEventListener("click", function (e) {
             if (item.classList.contains("active-m") === false) {
-                if (item.childNodes[3].childNodes[7] !== e.target) {
-                    portfolio.forEach(item => {
-                        item.classList.remove('active-m')
-                        if (item.childNodes[3] !== undefined) {
-                            item.childNodes[3].classList.remove('active-m')
-                        }
-                    })
-                    item.childNodes[3].classList.add('active-m')
-                    item.classList.add('active-m')
+                portfolio.forEach(item => {
+                    item.classList.remove('active-m')
+                    if (item.childNodes[3] !== undefined) {
+                        item.childNodes[3].classList.remove('active-m')
+                    }
+                })
+                if (item.childNodes[3].style.opacity == 0) {
+                    setInterval(function () {
+                        item.childNodes[3].style.opacity = '0.1'
+                    }, 800);
+                    setInterval(function () {
+                        item.childNodes[3].style.opacity = '0.2'
+                    }, 100);
+                    setInterval(function () {
+                        item.childNodes[3].style.opacity = '0.4'
+                    }, 100);
+                    setInterval(function () {
+                        item.childNodes[3].style.opacity = '0.5'
+                    }, 100);
+                    setInterval(function () {
+                        item.childNodes[3].style.opacity = '0.7'
+                    }, 100);
+                    setInterval(function () {
+                        item.childNodes[3].style.opacity = '0.8'
+                    }, 100);
+                    setInterval(function () {
+                        item.childNodes[3].style.opacity = '1'
+                    }, 100);
                 }
-                if (window.screen.width < 768) {
+                item.childNodes[3].classList.add('active-m')
+                item.classList.add('active-m')
+            } else {
+                if (item.childNodes[3].childNodes[5].childNodes[1].childNodes[1] !== e.target) {
+                    console.log('agwrgaweg');
+                    console.log(item.childNodes[3]);
+                    item.childNodes[3].style.opacity = '0.1';
                     portfolio.forEach(item => {
                         item.classList.remove('active-m')
                         if (item.childNodes[3] !== undefined) {
                             item.childNodes[3].classList.remove('active-m')
                         }
                     })
-                    item.childNodes[3].classList.add('active-m')
-                    item.classList.add('active-m')
+                    console.log('agwrgaweg');
+                    console.log(item.childNodes[3]);
+                    item.childNodes[3].style.opacity = '0';
                 }
             }
         })
@@ -117,11 +143,13 @@ btns.forEach(btn => {
         })
         for (let i = 0; i < btns.length; i++) {
             btns[i].classList.remove("active")
+            btns[i].childNodes[1].classList.remove("active")
             if (btns[i] == btn) {
                 option[i].classList.add('active')
             }
         }
         btn.classList.add('active')
+        btn.childNodes[1].classList.add('active')
     })
 });
 
