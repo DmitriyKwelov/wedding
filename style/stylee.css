@@ -14,6 +14,7 @@ html,body{
     justify-content: space-between;
     align-items: center;
     padding-top: 40px;
+    position: relative;
 }
 .line-for-section-top-first{
     display: block;
@@ -97,6 +98,12 @@ html,body{
     top: 0;
     z-index: 11;
 }
+.title-with-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #section1{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gsaergser3.jpg) center no-repeat;
 }
@@ -135,6 +142,8 @@ html,body{
     text-align: center;
     color: #181D24;
     transform: rotate(-90deg);
+    position: sticky;
+    top: 0;
 }
 #content-section4 h2{
     font-family: Prata;
@@ -150,6 +159,9 @@ html,body{
     max-width: 1140px;
     margin: 0 auto;
     padding: 70px 10px 0 10px;
+}
+#mobile-social-media{
+    display: none;
 }
 .header{
     top: 35px;
@@ -242,8 +254,10 @@ h1{
     text-align: center;
     letter-spacing: 0.1em;
     color: #F9F0EC;
+    margin: 20px 0 0 0;
 }
 .main-btn{
+    margin-top: 40px;
     position: relative;
     width: 216px;
     height: 44px;
@@ -255,6 +269,7 @@ h1{
     box-sizing: border-box;
     color: #D1A573;
     transition: 0.7s;
+    text-decoration: none;
 }
 .main-btn p{
     font-family: 'Didact Gothic', sans-serif;
@@ -530,11 +545,14 @@ h1{
     width: 7px;
 }
 .services{
-    width: 100%;
+    width: 1055px;
+    height: 1440px;
+    /* width: 100%; */
     display: flex;
-    align-content: space-between; 
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center; 
+    justify-content: center;
+    flex-wrap: wrap-reverse;
 }
 .service{
     position: relative;
@@ -617,6 +635,11 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     overflow-y: hidden; 
+}
+.title-service{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 .service-container::-webkit-scrollbar{
     width: 0px;
@@ -1184,6 +1207,16 @@ h1{
     color: #F9F0EC;
     margin: 20px 0 30px 0;
 }
+.footer-number a{
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 95px;
+    letter-spacing: 0.1em;
+    color: #F9F0EC;
+    margin: 20px 0 30px 0;
+    text-decoration: none;
+} 
 .design-by{
     position: absolute;
     margin: 0;
@@ -1325,6 +1358,9 @@ h1{
     }
 }
 @media(max-width: 768px){
+    .main-btn{
+        margin-top: 75px;
+    }
     #header-social-media{
         display: block;
     }
@@ -1545,8 +1581,18 @@ h1{
         z-index: 12;
         color: #F9F0EC;
     }
+    .design-by{
+        right: 0;
+        bottom: 15px;
+        width: 100%;
+        text-align: center;
+    }
 }
-
+@media(max-width: 740px){
+    .footer-number{
+        font-size: 50px;
+    }
+}
 @media(max-width: 700px){
     .text-dream p{
         font-size: 10px;
@@ -1637,10 +1683,17 @@ h1{
     .section5-second-content h3{
         font-size: 38px;
     }
+    .footer-number{
+        font-size: 40px;
+    }
 }
 @media(max-width: 425px){
+    #mobile-social-media{
+        margin-top: 20px;
+        display: block;
+    }
     #section1{
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gsaergser3.jpg) center 30% no-repeat;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gsaergser3.jpg) center 20% no-repeat;
         background-size: 300%;
     }
     #header-social-media{
@@ -1675,6 +1728,16 @@ h1{
         /* width: fit-content; */
         /* width: max-content; */
     }
+    .footer-number{
+        font-size: 34px;
+    }
+    .main-btn{
+        margin-top: 128px;
+    }
+    h1 {
+        margin: 0;
+        font-size: 24px;
+    }
 }
 @media(max-width: 366px){
     .history-block h2{
@@ -1689,6 +1752,9 @@ h1{
     }
     #section5 h2{
         font-size: 33px;
+    }
+    .footer-number{
+        font-size: 32px;
     }
 }
 @media(max-width: 348px){
@@ -1721,6 +1787,9 @@ h1{
     }
     .center-preparation-info{
         margin: 0;
+    }
+    .footer-number{
+        font-size: 30px;
     }
 }
 @media(max-width: 330px){
